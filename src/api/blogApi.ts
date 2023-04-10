@@ -25,7 +25,7 @@ export const blogApi = {
     }
   },
 
-  async getBlogDetail(apiRequestInfo: ApiRequestInfoType) {
+  async getBlogPost(apiRequestInfo: ApiRequestInfoType) {
     const { id: $oid } = apiRequestInfo;
 
     const payload = JSON.stringify({
