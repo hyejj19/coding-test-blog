@@ -5,12 +5,12 @@ import Dompurify from 'dompurify';
 import Tags from './Tags';
 import CommentList from './CommentList';
 
-type BlogDetailContentsProp = {
-  blogDetail: BlogPostResp;
+type BlogPostContentsProp = {
+  blogPost: BlogPostResp;
 };
 
-const BlogDetailContents = ({ blogDetail }: BlogDetailContentsProp) => {
-  const { body, title, comments, date, tags } = blogDetail;
+const BlogPostContents = ({ blogPost }: BlogPostContentsProp) => {
+  const { body, title, comments, date, tags } = blogPost;
 
   return (
     <>
@@ -45,4 +45,4 @@ const BlogDetailContents = ({ blogDetail }: BlogDetailContentsProp) => {
   );
 };
 
-export default BlogDetailContents;
+export default BlogPostContents;

@@ -15,7 +15,7 @@ const PostListItem = ({ blogItem }: PostListItemProp) => {
       <Tags tags={tags} />
 
       <Link
-        to={`/detail/${_id}`}
+        to={`/post/${_id}`}
         className="block font-body text-lg font-semibold text-primary transition-colors hover:text-green dark:text-white dark:hover:text-secondary">
         {title}
       </Link>
